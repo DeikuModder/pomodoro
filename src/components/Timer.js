@@ -18,7 +18,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: 'white',
         borderRadius: 30,
-        padding: 20
+        padding: 20,
+        borderWidth: 5
     },
     time: {
         fontSize: 80,

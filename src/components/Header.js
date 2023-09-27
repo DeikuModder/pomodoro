@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native"
+import { View, Text, Pressable, StyleSheet } from "react-native"
 
 export default function Header({ currentTab, setCurrentTab, setTime }){
     const tabOptions = ['Pomodoro', 'Short Break', 'Long Break']
@@ -12,10 +12,10 @@ export default function Header({ currentTab, setCurrentTab, setTime }){
     return (
         <View style={{flexDirection: 'row'}}>
             {tabOptions.map((tab, index) => (
-                <TouchableOpacity key={index} style={[styles.tabStyles, currentTab !== index && {borderColor: 'transparent'}]} 
+                <Pressable key={index} style={[styles.tabStyles, currentTab !== index && {borderColor: 'transparent'}]} 
                     onPress={() => {handlePress(index)}}>
                     <Text style={{fontWeight: 'bold'}}>{tab}</Text>
-                </TouchableOpacity>
+                </Pressable>
             ))}
         </View>
     )

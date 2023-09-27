@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, Text, Pressable, View } from "react-native";
 import { useEffect, useState } from "react";
 import { Audio } from 'expo-av';
  
@@ -56,9 +56,9 @@ export default function StartButton({time, setTime, currentTab}){
 
     return (
         <View style={{width: 130, position: 'relative', left: '30%', top: 20}}>
-            <TouchableOpacity onPress={handleStartStop} style={styles.button}>
+            <Pressable onPress={handleStartStop} style={styles.button}>
                 <Text style={{fontWeight: 'bold', color: "white", fontSize: 30}}>{isActive ? 'STOP' : 'START'}</Text>
-            </TouchableOpacity>
+            </Pressable>
         </View>
     )
 }
