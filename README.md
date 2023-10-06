@@ -10,7 +10,7 @@ A little bit more about hook, specifically the useEffect
 
 ### Notes
 
-I've made this project as part of a course of React Native, this is the first one of the 6 apps that are deloyed in that course
+I've made this project as part of a course of React Native, this is the first one of the 4 apps that are deloyed in that course
 
 I've solved a bug of this pomodoro app that the original video has, it's a small fix anyways.
 
